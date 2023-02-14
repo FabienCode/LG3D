@@ -50,13 +50,15 @@ The code is tested under the following environment:
 
 ### ScanNet
 
-Please follow the instruction [here](./data/scannet) to prepare ScanNet Data.
+Please follow the instruction [here](https://github.com/FabienCode/LG3D/tree/master/data/scannet) to prepare ScanNet Data.
 
 ### SUN RGB-D
 
-Please follow the instruction [here](./data/sunrgbd) to prepare SUN RGB-D Data.
+Please follow the instruction [here](https://github.com/FabienCode/LG3D/tree/master/data/sunrgbd) to prepare SUN RGB-D Data.
 
 ## Training and testing
+
+### Training
 
 We provide the trained models of ScanNet backbone Pointnet++.
 
@@ -78,12 +80,16 @@ convert fully LG3D model to VoteNet.
 
 To test a 3D detector on point cloud data, please refer to [Single modality demo](https://mmdetection3d.readthedocs.io/en/latest/0_demo.html) and [Point cloud demo](https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#demo) in MMDetection3D docs. -->
 
+### Testing mAP
+
 Test VoteNet on ScanNet and evaluate the mAP.
 
 ```shell
 python tools/test.py configs/votenet/votenet_8x8_scannet-3d-18class.py log/pre_trained/votenet_scannet_final.pth --eval mAP --eval-options 'out_dir=./log/scannet/show_results'
 
 ```
+
+### visualization
 
 Test VoteNet on ScanNet and save the points and prediction visualization results.
 
