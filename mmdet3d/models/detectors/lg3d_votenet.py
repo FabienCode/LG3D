@@ -44,7 +44,6 @@ class lg3d_VoteNet(lg3d_SingleStage3DDetector):
 
     def forward_train(self,
                       points,
-                      #   label_points,
                       img_metas,
                       gt_bboxes_3d,
                       gt_labels_3d,
@@ -52,6 +51,7 @@ class lg3d_VoteNet(lg3d_SingleStage3DDetector):
                       pts_instance_mask=None,
                       gt_bboxes_ignore=None):
         """Forward of training.
+
 
         Args:
             points (list[torch.Tensor]): Points of each batch.
@@ -81,11 +81,11 @@ class lg3d_VoteNet(lg3d_SingleStage3DDetector):
         anno = self.extract_para_scannet(gt_bboxes_3d, gt_labels_3d).cuda()
         anno_feature = self.anno_descriptor(anno)
 
-        # label point clouds
+        # extraxt label point clouds
         label_points_cat = torch.stack(label_points)
         label_points_feature = self.label_encoder(label_points_cat)
 
-        # teacher feature
+        # Auxiliary feature
         teacher_feature = self.t_backbone(points_cat)
 
         label_attention_anno = self.inducer(label_points_feature['fp_features'][-1],
