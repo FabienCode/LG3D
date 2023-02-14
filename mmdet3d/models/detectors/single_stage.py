@@ -121,15 +121,13 @@ class lg3d_SingleStage3DDetector(Base3DDetector):
 
         See `mmdetection/tools/analysis_tools/get_flops.py`
         """
-        x, lg_x = self.extract_feat(points)
+        x = self.extract_feat(points)
         try:
             sample_mod = self.train_cfg.sample_mod
             outs = self.bbox_head(x, sample_mod)
-            lg_outs = self.bbox_head(lg_x, sample_mod)
         except AttributeError:
             outs = self.bbox_head(x)
-            lg_outs = self.bbox_head(lg_x)
-        return outs, lg_outs
+        return outs
 
     def extract_feat(self, points, img_metas=None):
         """Directly extract features from the backbone+neck.
