@@ -4,7 +4,7 @@ This is the official implementation of LG3D (ECCV 2022), a simple and highly eff
 
 **Label-Guided Auxiliary Training Improves 3D Object Detector**
 
-![图片](fig/Framework.png)
+![图片](fig/framework.png)
 
 ## Introduction
 
