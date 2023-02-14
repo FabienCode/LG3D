@@ -1,8 +1,13 @@
 # Label-Guided Auxiliary Training Improves 3D Object Detector
 
-This is the official implementation of LG3D (ECCV 2022), a simple and highly efficient auxiliary network for 3D object detection. For more details, please refer to:
+This is a release of the code of our paper **_Label-Guided Auxiliary Training Improves 3D Object Detector_**, ECCV 2022.
 
-**Label-Guided Auxiliary Training Improves 3D Object Detector**
+**Authors**: Yaomin Huang, Xinmei Liu, Yichen Zhu, Zhiyuan Xu, Chaomin Shen \*, Zhengping Che, Guixu Zhang,
+Yaxin Peng, Feifei Feng, and Jian Tang \*
+
+[[arxiv]](https://arxiv.org/abs/2207.11753)
+
+In this repository, we _reimplement_ LG3D based on [mmdetection3d](https://github.com/open-mmlab/mmdetection3d) for easier usage.
 
 ![图片](fig/framework.png)
 
