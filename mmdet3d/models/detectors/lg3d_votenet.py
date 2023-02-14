@@ -51,8 +51,6 @@ class lg3d_VoteNet(lg3d_SingleStage3DDetector):
                       pts_instance_mask=None,
                       gt_bboxes_ignore=None):
         """Forward of training.
-
-
         Args:
             points (list[torch.Tensor]): Points of each batch.
             img_metas (list): Image metas.
