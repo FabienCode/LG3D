@@ -60,8 +60,6 @@ Please follow the instruction [here](https://github.com/FabienCode/LG3D/tree/mas
 
 ### Training
 
-We provide the trained models of ScanNet backbone Pointnet++.
-
 For ScanNet V2, please run to training LG3D:
 
 ```shell
