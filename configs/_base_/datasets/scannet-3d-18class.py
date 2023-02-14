@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'ScanNetDataset'
-data_root = '/media/liuxm94/macext/Downloads/scannet/'
+data_root = 'data/scannet/'
 class_names = ('cabinet', 'bed', 'chair', 'sofa', 'table', 'door', 'window',
                'bookshelf', 'picture', 'counter', 'desk', 'curtain',
                'refrigerator', 'showercurtrain', 'toilet', 'sink', 'bathtub',
