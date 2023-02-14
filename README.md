@@ -3,7 +3,7 @@
 This is a release of the code of our paper **_Label-Guided Auxiliary Training Improves 3D Object Detector_**, ECCV 2022.
 
 **Authors**: Yaomin Huang, Xinmei Liu, Yichen Zhu, Zhiyuan Xu, Chaomin Shen \*, Zhengping Che, Guixu Zhang,
-Yaxin Peng, Feifei Feng, and Jian Tang \*
+Yaxin Peng, Feifei Feng, and Jian Tang \* (\*corresponding author)
 
 [[arxiv]](https://arxiv.org/abs/2207.11753)
 
