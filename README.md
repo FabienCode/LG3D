@@ -102,3 +102,15 @@ This project is released under the [Apache 2.0 license](LICENSE). -->
 ## Acknowledgement
 
 Our code is heavily based on [MMDetection3D](https://github.com/open-mmlab/mmdetection3d). Thanks mmdetection3d Development Team for their awesome codebase.
+
+## Code Modifications
+
+The following modifications have been made to the original code:
+
+- Added LG3D configuration file: `configs/votenet/votenet_lg3d_scannet.py`
+- Added LG3D model file: `mmdet3d/model/detector/lg3d_votenet.py`
+- Added LG3D required corresponding module code: `mmdet3d/models/backbone/attention_utils.py`
+
+## License Compliance
+
+Please ensure compliance with the licensing terms of the original project, i.e., the Apache License.
