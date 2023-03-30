@@ -1,4 +1,7 @@
+**This Project is the same as [[midea-ai/LG3D]](https://github.com/midea-ai/LG3D), you can use it instead.**
+
 # Label-Guided Auxiliary Training Improves 3D Object Detector
+
 
 This is a release of the code of our paper **_Label-Guided Auxiliary Training Improves 3D Object Detector_**, ECCV 2022.
 
